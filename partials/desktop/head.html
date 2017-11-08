@@ -2,7 +2,7 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"><body>
 
 
-  <a onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black">Open Animated Modal</a>
+  
 
   <div id="id01" class="w3-modal">
     <div class="w3-modal-content w3-animate-top w3-card-4">
@@ -38,10 +38,10 @@
           </div><b>Bakolpulsa</b>
         </a>
 
-        <ul class="dropdown-menu"><li><a onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-">Paduan</a></li>
+        <ul class="dropdown-menu">
           <li><a ng-click="openGroup()">
             <i class="icon icon-new-group"></i><span my-i18n="im_new_group"></span>
-          </a></li>
+          </a></li><li><a onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black">Paduan</a></li>
           <li ng-if="!isEmpty.contacts"><a ng-click="openContacts()">
             <i class="icon icon-contacts"></i><span my-i18n="im_contacts"></span>
           </a></li>
