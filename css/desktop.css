@@ -13,6 +13,13 @@
   float: left;
   width: 31%;
 }
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: left;
+}
 .tg_head_main_wrap {
   float: left;
   width: 69%;
