@@ -1,15 +1,22 @@
 
-  <div id="openModal" class="modalbg">
-  <div class="dialog">
-    <a href="#close" title="Close" class="close">X</a>
-  	<h2>Holy Crap!!!</h2>
-		<p>You freakin' did it!</p>
-		<p>You opened up the freakin' modal window! Now close it, ya dingus.</p>
-    <p class="fineprint">Based on the article "Creating a modal window with HTML5 & CSS3" at <a href="webdesignerdepot.com">Webdesigner Depot</a></p>
-    <p class="fineprint">p.s. Sorry for calling you a dingus earlier.</p>
-	</div>
-</div>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
+
+
+ 
+  
+
+  <div id="id01" class="w3-modal">
+    <div class="w3-modal-content">
+      <div class="w3-container">
+        <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+        <p>Some text. Some text. Some text.</p>
+        <p>Some text. Some text. Some text.</p>
+      </div>
+    </div>
+  </div>
+
+            
   
 
           
@@ -71,7 +78,7 @@
             <li><a ng-click="toggleMedia('photos')" my-i18n="head_media_photos"></a></li>
             <li><a ng-click="toggleMedia('video')" my-i18n="head_media_video"></a></li>
             <li><a ng-click="toggleMedia('documents')" my-i18n="head_media_documents"></a></li>
-            <li><a ng-click="toggleMedia('audio')" my-i18n="head_media_audio"></a><hr/></li><li><a class="button" href="#openModal">Open it up!</a></li>
+            <li><a ng-click="toggleMedia('audio')" my-i18n="head_media_audio"></a><hr/></li><li><button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black">Paduan</button></li>
           </ul>
         </div>
         <a class="tg_head_btn tg_head_peer_search_btn" ng-click="toggleMedia('search')">
