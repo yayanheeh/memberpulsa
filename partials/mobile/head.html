@@ -38,13 +38,11 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </a>
-        <ul ng-switch-when="true" class="dropdown-menu">
+        <ul ng-switch-when="true" class="dropdown-menu"><li><a onclick="document.getElementById('id01').style.display='block'" class="w3-w3-white">Paduan</a></hr/></li>
           <li><a ng-click="openGroup()" my-i18n="head_new_group"></a></li>
           <li><a ng-click="importContact()" my-i18n="head_new_contact"></a></li>
           <li ng-if="!isEmpty.contacts"><a ng-click="openContacts()" my-i18n="head_contacts"></a></li>
           <li><a ng-click="openSettings()" my-i18n="head_settings"></a></li>
-          <li><button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-white">Open</button></li>
-
         <li><a ng-click="logOut()" my-i18n="head_log_out"></a></li>
         </ul>
         <ul ng-switch-default class="dropdown-menu">
