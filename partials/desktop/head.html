@@ -31,7 +31,7 @@
         <ul class="dropdown-menu">
           <li><a ng-click="openGroup()">
             <i class="icon icon-new-group"></i><span my-i18n="im_new_group"></span>
-          </a></li><i class="material-icons">show_chart</i><li><a onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-">Paduan</a></i></li>
+         </a>
           <li ng-if="!isEmpty.contacts"><a ng-click="openContacts()">
             <i class="icon icon-contacts"></i><span my-i18n="im_contacts"></span>
           </a></li>
@@ -69,7 +69,7 @@
             <li><a ng-click="toggleMedia('photos')" my-i18n="head_media_photos"></a></li>
             <li><a ng-click="toggleMedia('video')" my-i18n="head_media_video"></a></li>
             <li><a ng-click="toggleMedia('documents')" my-i18n="head_media_documents"></a></li>
-            <li><a ng-click="toggleMedia('audio')" my-i18n="head_media_audio"></a><hr/></li><li><button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black">Paduan</button></li>
+            <li><a ng-click="toggleMedia('audio')" my-i18n="head_media_audio"></a><hr/></li><li><a onclick="document.getElementById('id01').style.display='block'" class="w3-w3-">Paduan</a></li>
           </ul>
         </div>
         <a class="tg_head_btn tg_head_peer_search_btn" ng-click="toggleMedia('search')">
@@ -92,7 +92,7 @@
             <i class="icon icon-filter-documents"></i><span my-i18n="im_media_documents"></span>
           </div>
           <div class="tg_head_peer_media" ng-switch-when="audio">
-            <i class="icon icon-filter-audio"></i><span my-i18n="im_media_audio"></span><hr/>Paduan
+            <i class="icon icon-filter-audio"></i><span my-i18n="im_media_audio"></span>
           </div>
 
           <a class="tg_head_btn" ng-switch-default ng-click="showPeerInfo()">
