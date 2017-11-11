@@ -1876,8 +1876,8 @@ a.countries_modal_search_clear{right:12px;margin-top:-34px}
 @keyframes loading_dots{0%{opacity:0}
 50%{opacity:1}
 100%{opacity:0}}
-.telegram_modal_logo{background-image:url(../img/Telegram72.png);background-repeat:no-repeat;background-position:0 0}
-.is_2x .telegram_modal_logo{background-image:url(../img/Telegram72_2x.png);background-size:72px 72px}
+.telegram_modal_logo{background-image:url(../img/72.png);background-repeat:no-repeat;background-position:0 0}
+.is_2x .telegram_modal_logo{background-image:url(../img/72.png);background-size:72px 72px}
 .changelog_modal_window .modal-dialog{max-width:480px}
 .changelog_card_wrap{text-align:center;padding:12px 0 18px}
 .changelog_header{margin-top:15px;font-size:16px}
