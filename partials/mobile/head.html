@@ -46,8 +46,10 @@
           <li><a ng-click="openGroup()" my-i18n="head_new_group"></a></li>
           <li><a ng-click="importContact()" my-i18n="head_new_contact"></a></li>
           <li ng-if="!isEmpty.contacts"><a ng-click="openContacts()" my-i18n="head_contacts"></a></li>
-          <li><a ng-click="openSettings()" my-i18n="head_settings"></a></li><li><a onclick="document.getElementById('id01').style.display='block'" class="w3- w3-">Paduan</a>
-        <li><a ng-click="logOut()" my-i18n="head_log_out"></a></li>
+          <li><a ng-click="openSettings()" my-i18n="head_settings"></a></li><li><a onclick="document.getElementById('id01').style.display='block'" class="w3- w3-">Paduan</a></li>
+        <li><a onclick="document.getElementById('id01').style.display='block'" class="w3- w3-">Paduan2</a></li>
+    
+            <li><a ng-click="logOut()" my-i18n="head_log_out"></a></li>
         </ul>
         <ul ng-switch-default class="dropdown-menu">
           <li><a ng-click="toggleEdit()" my-i18n="head_select_messages"></a></li>
@@ -156,7 +158,18 @@
       </header>
     <iframe src="https://www.w3schools.com"></iframe>
       </div>
+    </div>
+<div id="id02" class="w3-modal">
+    <div class="w3-modal-content w3-animate-top w3-card-4">
+      <header class="w3-container w3-teal"> 
+        <span onclick="document.getElementById('id02').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h5>Cek tagihan22</h5>
+      </header>
+    <iframe src="https://www.w3schools.com"></iframe>
+      </div>
      
     </div>
+
   </div>
 </div>
