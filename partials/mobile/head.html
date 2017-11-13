@@ -3,6 +3,21 @@
 
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <style>
+    .tb {
+    margin:10px 0;
+}
+.tb span+span, .collapsible {
+    display:none;
+}
+.tb input[type="checkbox"]:checked ~ span {
+    display:none;
+}
+.tb input[type="checkbox"]:checked ~ span+span{
+    display:inline;
+}
+.tb input[type="checkbox"]:checked ~ .collapsible {
+    display:table;
+}
     
 #customers {
     font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
@@ -155,20 +170,36 @@
         <span onclick="document.getElementById('id01').style.display='none'" 
         class="w3-button w3-display-topright">&times;</span>
         <h5>Cek tagihan</h5>
+          <div class="tb">
+    <input type="checkbox"/>
+    <span>Show</span><span>Hide</span>
+    <table class="collapsible" id="collapsible1">
+        <tr>
+            <td>Hello 1</td>
+        </tr>   
+    </table>    
+</div>
+<div class="tb">
+    <input type="checkbox"/>
+    <span>Show</span><span>Hide</span>
+    <table class="collapsible" id="collapsible1">
+        <tr>
+            <td>Hello 2</td>
+        </tr>   
+    </table>    
+</div>
+<div class="tb">
+    <input type="checkbox"/>
+    <span>Show</span><span>Hide</span>
+    <table class="collapsible" id="collapsible1">
+        <tr>
+            <td>Hello 3</td>
+        </tr>   
+    </table>    
+</div>
       </header>
     
       </div>
-    </div>
-<div id="id02" class="w3-modal">
-    <div class="w3-modal-content w3-animate-top w3-card-4">
-      <header class="w3-container w3-teal"> 
-        <span onclick="document.getElementById('id02').style.display='none'" 
-        class="w3-button w3-display-topright">&times;</span>
-        <h5>Cek tagihan22</h5>
-      </header>
-    
-      </div>
-     
     </div>
 
   </div>
