@@ -2,11 +2,94 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
 
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
- 
-  
+<style>
+ @import url(https://fonts.googleapis.com/css?family=Audiowide);
+html {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  font-size: 16px; 
+  font-weight: normal;
+  line-height: 1.4;
+}
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+body:before {
+	content: "";
+  display: table;
+  clear: both;
+}
+*,
+*:before,
+*:after  { box-sizing: inherit; }
 
+/* Tab Styles */
+.tab-group {
+	margin: 1em auto;
+	max-width: 40em;
+	width: 100%;
+}
+
+.tab {
+	position: relative;
+    width: 100%;
+}
+
+.tab input { 
+	left: 0;
+	position: absolute;
+	top: 0;
+	z-index: -999;
+}
+	
+.tab label {
+	background: #72d2c6;
+	color: #fff; 
+	cursor: pointer;
+	display: block;
+	line-height: 3;
+	margin-bottom: 0.5em;
+	padding-left: 0.5em; 
+}	
+
+.tab input:focus + label,
+.tab label:hover{ 
+	background: #85D8CE;
+	font-weight: bold; 
+}
+
+.tab-content {
+	max-height: 0;
+	overflow: hidden;
+	transition: all 0.35s;
+}
+
+.tab-content p {
+	margin: 1em 0;
+}
+
+/* open the tab when label is checked */
+
+.tab input:checked ~ .tab-content { 
+	max-height: 6.25em;
+}
+
+
+/*.tab > input:not(:focus) ~ .tab-content { 
+	max-height: 0;
+	transition: all .75s cubic-bezier(0.19, 1, 0.22, 1) .15s;
+}*/
+
+
+
+
+
+
+</style>
  
             
   
@@ -116,51 +199,56 @@
         <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
         <p>Some text. Some text. Some text.</p>
         <p>
-<div id="accordion" role="tablist">
-  <div class="card">
-    <div class="card-header" role="tab" id="headingOne">
-      <h5 class="mb-0">
-        <a data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-          Collapsible Group Item #1
-        </a>
-      </h5>
-    </div>
-
-    <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
-      <div class="card-body">
-        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-      </div>
-    </div>
-  </div>
-  <div class="card">
-    <div class="card-header" role="tab" id="headingTwo">
-      <h5 class="mb-0">
-        <a class="collapsed" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-          Collapsible Group Item #2
-        </a>
-      </h5>
-    </div>
-    <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion">
-      <div class="card-body">
-        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-      </div>
-    </div>
-  </div>
-  <div class="card">
-    <div class="card-header" role="tab" id="headingThree">
-      <h5 class="mb-0">
-        <a class="collapsed" data-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-          Collapsible Group Item #3
-        </a>
-      </h5>
-    </div>
-    <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion">
-      <div class="card-body">
-        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-      </div>
-    </div>
-  </div>
-</div>
+    <body>
+      
+    	
+      
+			<div class="tab-group">  
+			
+				<!-- start tab-1 -->  
+				<div class="tab">
+					<input id="tab-1" type="radio" name="tabs"> 
+					<label for="tab-1" >Label One</label>
+					<div class="tab-content">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac laoreet elit. Phasellus dignissim purus vitae urna cursus, quis congue ligula tristique. Ut nec blandit risus. Donec at orci ut justo venenatis viverra.</p>
+					</div>
+				</div>
+				<!-- end tab-1 -->
+				
+				<!-- start tab-2 -->  
+				<div class="tab">
+					<input id="tab-2" type="radio" name="tabs"> 
+					<label for="tab-2" >Label Two</label>
+					<div class="tab-content">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac laoreet elit. Phasellus dignissim purus vitae urna cursus, quis congue ligula tristique. Ut nec blandit risus. Donec at orci ut justo venenatis viverra.</p>
+					</div>
+				</div>
+				<!-- end tab-2 -->
+				
+				<!-- start tab-3 -->  
+				<div class="tab">
+					<input id="tab-3" type="radio" name="tabs"> 
+					<label for="tab-3" >Label Three</label>
+					<div class="tab-content">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac laoreet elit. Phasellus dignissim purus vitae urna cursus, quis congue ligula tristique. Ut nec blandit risus. Donec at orci ut justo venenatis viverra.</p>
+					</div>
+				</div>
+				<!-- end tab-3 -->
+				
+				<!-- start tab-4 -->  
+				<div class="tab">
+					<input id="tab-4" type="radio" name="tabs"> 
+					<label for="tab-4" >Label Four</label>
+					<div class="tab-content">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac laoreet elit. Phasellus dignissim purus vitae urna cursus, quis congue ligula tristique. Ut nec blandit risus. Donec at orci ut justo venenatis viverra.</p>
+					</div>
+				</div>
+				<!-- end tab-4 -->
+				
+			</div>
+      
+      
+    </body>
 </p>
       </div>
     </div>
