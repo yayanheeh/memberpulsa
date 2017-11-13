@@ -3,21 +3,87 @@
 
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <style>
-    .tb {
-    margin:10px 0;
+    @import url(https://fonts.googleapis.com/css?family=Audiowide);
+html {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  font-size: 16px; 
+  font-weight: normal;
+  line-height: 1.4;
 }
-.tb span+span, .collapsible {
-    display:none;
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
 }
-.tb input[type="checkbox"]:checked ~ span {
-    display:none;
+body:before {
+	content: "";
+  display: table;
+  clear: both;
 }
-.tb input[type="checkbox"]:checked ~ span+span{
-    display:inline;
+*,
+*:before,
+*:after  { box-sizing: inherit; }
+
+/* Tab Styles */
+.tab-group {
+	margin: 1em auto;
+	max-width: 40em;
+	width: 100%;
 }
-.tb input[type="checkbox"]:checked ~ .collapsible {
-    display:table;
+
+.tab {
+	position: relative;
+    width: 100%;
 }
+
+.tab input { 
+	left: 0;
+	position: absolute;
+	top: 0;
+	z-index: -999;
+}
+	
+.tab label {
+	background: #72d2c6;
+	color: #fff; 
+	cursor: pointer;
+	display: block;
+	line-height: 3;
+	margin-bottom: 0.5em;
+	padding-left: 0.5em; 
+}	
+
+.tab input:focus + label,
+.tab label:hover{ 
+	background: #85D8CE;
+	font-weight: bold; 
+}
+
+.tab-content {
+	max-height: 0;
+	overflow: hidden;
+	transition: all 0.35s;
+}
+
+.tab-content p {
+	margin: 1em 0;
+}
+
+/* open the tab when label is checked */
+
+.tab input:checked ~ .tab-content { 
+	max-height: 6.25em;
+}
+
+
+/*.tab > input:not(:focus) ~ .tab-content { 
+	max-height: 0;
+	transition: all .75s cubic-bezier(0.19, 1, 0.22, 1) .15s;
+}*/
+
     
 #customers {
     font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
@@ -171,30 +237,48 @@
         class="w3-button w3-display-topright">&times;</span>
         <h5>Cek tagihan</h5>
       </header>
-          <p><div class="tb">
-    <input type="checkbox"/>
-   <p><span>Show</span><span>Hide</span></p><hr/>
-    <table class="collapsible" id="collapsible1">
-        <tr>
-            <td>Hello 1</td>
-        </tr>   
-    </table>    
-</div>
-<div class="tb">
-    <input type="checkbox"/>
-    <p><span>Cara taransaksi</span><span>Hide</span></p><hr/>
-    <table class="collapsible" id="collapsible1">
-        <tr>
-            <td>Cara transaksi</td>
-        </tr>   
-    </table>    
-</div>
-<div class="tb">
-    <input type="checkbox"/>
-    <p><span>Cek tagihan</span><span>tutup</span></p><hr/>
-    <table class="collapsible" id="collapsible1">
-        <tr>
-            <td><table id="customers">
+            <body>
+      
+    	
+      
+			<div class="tab-group">  
+			
+				<!-- start tab-1 -->  
+				<div class="tab">
+					<input id="tab-1" type="radio" name="tabs"> 
+					<label for="tab-1" >Label One</label>
+					<div class="tab-content">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac laoreet elit. Phasellus dignissim purus vitae urna cursus, quis congue ligula tristique. Ut nec blandit risus. Donec at orci ut justo venenatis viverra.</p>
+					</div>
+				</div>
+				<!-- end tab-1 -->
+				
+				<!-- start tab-2 -->  
+				<div class="tab">
+					<input id="tab-2" type="radio" name="tabs"> 
+					<label for="tab-2" >Label Two</label>
+					<div class="tab-content">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac laoreet elit. Phasellus dignissim purus vitae urna cursus, quis congue ligula tristique. Ut nec blandit risus. Donec at orci ut justo venenatis viverra.</p>
+					</div>
+				</div>
+				<!-- end tab-2 -->
+				
+				<!-- start tab-3 -->  
+				<div class="tab">
+					<input id="tab-3" type="radio" name="tabs"> 
+					<label for="tab-3" >Label Three</label>
+					<div class="tab-content">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac laoreet elit. Phasellus dignissim purus vitae urna cursus, quis congue ligula tristique. Ut nec blandit risus. Donec at orci ut justo venenatis viverra.</p>
+					</div>
+				</div>
+				<!-- end tab-3 -->
+				
+				<!-- start tab-4 -->  
+				<div class="tab">
+					<input id="tab-4" type="radio" name="tabs"> 
+					<label for="tab-4" >Cek Tagihan</label>
+					<div class="tab-content">
+						<p><table id="customers">
   <tr>
     <th>kode</th>
     <th>cek tagihan</th>
@@ -248,9 +332,23 @@
   </tr>
 </table>    </td>
         </tr>   
-    </table>    
+    </table>    </p>
+					</div>
+				</div>
+				<!-- end tab-4 -->
+				
+			</div>
+      
+      
+    </body>  
+        
+        
+        
+        
+        
+        
 </div>
-        </p>
+       
       </div>
     </div>
 
