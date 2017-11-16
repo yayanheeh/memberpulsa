@@ -23,12 +23,12 @@
         </a>
         <ul ng-switch-when="true" class="dropdown-menu">
         
-          <li><span class="glyphicon glyphicon-user" aria-hidden="true"></span><a ng-click="openGroup()" my-i18n="head_new_group"></a></li>
-          <li><span class="glyphicon glyphicon-cog" aria-hidden="true"></span><a onclick="document.getElementById('id01').style.display='block'" class="w3- w3-">Paduan</a></li>
-          <li><span class="glyphicon glyphicon-book" aria-hidden="true"></span><a ng-click="importContact()" my-i18n="head_new_contact"></a></li>
-          <li><span class="glyphicon glyphicon-bookmark" aria-hidden="true"></span><a ng-if="!isEmpty.contacts"><a ng-click="openContacts()" my-i18n="head_contacts"></a></li>
-          <li><span class="glyphicon glyphicon-cog" aria-hidden="true"></span><a ng-click="openSettings()" my-i18n="head_settings"></a></li>
-          <li><span class="glyphicon glyphicon-off" aria-hidden="true"></span><a ng-click="logOut()" my-i18n="head_log_out"></a></li>
+          <li><a ng-click="openGroup()" my-i18n="head_new_group"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></a></li>
+          <li><a onclick="document.getElementById('id01').style.display='block'" class="w3- w3-">Paduan</a></li>
+          <li><a ng-click="importContact()" my-i18n="head_new_contact"></a></li>
+          <li><a ng-if="!isEmpty.contacts"><a ng-click="openContacts()" my-i18n="head_contacts"></a></li>
+          <li><a ng-click="openSettings()" my-i18n="head_settings"></a></li>
+          <li><a ng-click="logOut()" my-i18n="head_log_out"></a></li>
         </ul>
         <ul ng-switch-default class="dropdown-menu">
           <li><a ng-click="toggleEdit()" my-i18n="head_select_messages"></a></li>
@@ -139,7 +139,16 @@
         <div class="container">
   <h2>Accordion Example</h2>
   <p><strong>Note:</strong> The <strong>data-parent</strong> attribute makes sure that all collapsible elements under the specified parent will be closed when one of the collapsible item is shown.</p>
-  <div class="panel-group" id="accordion">
+<div class="list-group">
+  <a href="#" class="list-group-item disabled">
+    Nomer-nomer Reciever <b>Bakolpulsa</b> 
+  </a>
+  <a href="#" class="list-group-item">Xl 087851806000  </a>
+  <a href="#" class="list-group-item">Im3 085732889000  </a>
+  <a href="#" class="list-group-item">Axis 083857357000 </a>
+  <a href="#" class="list-group-item">Three 089634558000</a>
+  <a href="#" class="list-group-item">Telkomsel 081230608000</a>
+</div>  <div class="panel-group" id="accordion">
     <div class="panel panel-default">
       <div class="panel-heading">
         <h4 class="panel-title">
