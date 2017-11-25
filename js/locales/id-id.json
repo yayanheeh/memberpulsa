@@ -158,8 +158,8 @@
 	"game_modal_share_score": "Berbagi Score",
 
 	"error_browser_no_local_file_system_image_md": "Browser Anda tidak mendukung{moz-link: https://developer.mozilla.org/en-US/docs/Web/API/LocalFileSystem | LocalFileSystem} fitur yang dibutuhkan untuk menampilkan gambar ini.\nTolong, pasang {chrome-link: http://google.com/chrome | Google Chrome} or use {telegram-link: https://telegram.org/ | mobile app} instead.",
-	"error_image_download_failed": "Download failed",
-	"error_browser_no_local_file_system_video_md": "Your browser doesn't support {moz-link: https://developer.mozilla.org/en-US/docs/Web/API/LocalFileSystem | LocalFileSystem} feature which is needed to play this video.\nPlease, install {chrome-link: http://google.com/chrome | Google Chrome} or use {telegram-link: https://telegram.org/ | mobile app} instead.",
+	"error_image_download_failed": "Download gagal",
+	"error_browser_no_local_file_system_video_md": "Browser Anda tidak mendukung {moz-link: https://developer.mozilla.org/en-US/docs/Web/API/LocalFileSystem | LocalFileSystem} feature which is needed to play this video.\nPlease, install {chrome-link: http://google.com/chrome | Google Chrome} or use {telegram-link: https://telegram.org/ | mobile app} instead.",
 	"error_video_download_failed": "Video download gagal",
 
 	"unread_messages_split": "Pesan belum dibaca",
