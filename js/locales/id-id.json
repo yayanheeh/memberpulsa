@@ -180,8 +180,8 @@
 	"chat_title_deleted": "DIHAPUS",
 	"format_size_progress_mulitple": "{done} dari {total} {parts}",
 	"format_size_progress": "{done} dari {total}",
-	"relative_time_pluralize_minutes_ago": "{'one': '1 menit yang lalu', 'other': '{} beberapa menit yang lalu'}",
-	"relative_time_pluralize_hours_ago": "{'one': '1 sejam yang lalu', 'other': '{} beberapa jam yang lalu'}",
+	"relative_time_pluralize_minutes_ago": "{'one': '1 menit yang lalu', 'other': '{}  menit yang lalu'}",
+	"relative_time_pluralize_hours_ago": "{'one': '1 sejam yang lalu', 'other': '{} jam yang lalu'}",
 	"relative_time_just_now": "baru saja",
 
 	"changelog_modal_header_recent_updates_md": "Update terbaru di **Bakolpulsa**",
