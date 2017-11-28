@@ -9,17 +9,23 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <style>
-
-
-.atas {
-  overflow: hidden;
-  background-color: #333;
-  position: fixed;
-  top: 0;
-  width: 100%;
+body {
+  margin: 0;
+  font-size: 28px;
 }
 
-.navbar a {
+.header {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+}
+
+#navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+#navbar a {
   float: left;
   display: block;
   color: #f2f2f2;
@@ -29,12 +35,32 @@
   font-size: 17px;
 }
 
-.main {
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+#navbar a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.content {
   padding: 16px;
-  margin-top: 30px;
-  height: 1500px; /* Used in this example to enable scrolling */
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+.sticky + .content {
+  padding-top: 60px;
 }
 </style>
+
+
 <style>
 body {
     background-color: white;
@@ -57,10 +83,17 @@ body {
 
 </head>
 <body>
-<div class="atas">
-  <a href="#home">Bakolpulsa</a>
-  <a href="#news">News</a>
-  <a href="#contact">Contact</a>
+<body onscroll="myFunction()">
+
+<div class="header">
+  <h2>Scroll Down</h2>
+  <p>Scroll down to see the sticky effect.</p>
+</div>
+
+<div id="navbar">
+  <a class="active" href="javascript:void(0)">Home</a>
+  <a href="javascript:void(0)">News</a>
+  <a href="javascript:void(0)">Contact</a>
 </div>
 
 <br/><br/><br/>
