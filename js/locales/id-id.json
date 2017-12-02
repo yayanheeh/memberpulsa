@@ -421,7 +421,7 @@
 	 "error_modal_media_not_supported_description": "Browser Anda tidak dapat memutar file media ini. Cobalah mendownload file dan membukanya di pemutar media.",
 	 "error_modal_username_not_found_description": "Tidak ada akun Bakolpusa dengan nama pengguna yang Anda berikan.",
 	"error_modal_phonecalls_not_supported_description_md": "Sayangnya, panggilan tidak didukung di App Web saat ini.\n\nAnda bisa menelepon {user} menggunakan aplikasi mobile kami atau aplikasi.\n{download-link: Download »}",
-	"error_modal_app_signup_forbidden_md": "Anda belum memiliki akun Bakolpulsa**sign up** with {signup-link: Android / iPhone} first.",
+	"error_modal_app_signup_forbidden_md": "Anda belum memiliki akun Bakolpulsa Silakan Download Aplikasi Bakolpulsa untuk melakukan pendaftaran",
 
 	"error_modal_bad_request_description": "Salah satu params hilang atau tidak valid.",
 	"error_modal_unauthorized_description": "Tindakannya membutuhkan akses otorisasi. Silahkan {login-link: log in}.",
@@ -534,7 +534,7 @@
 	"login_code_input_placeholder": "Code",
 	"login_tel_input_placeholder": "Nomor telepon",
 	"login_country_select_placeholder": "Negara",
-	"login_generating_key": "Membangkitkan kunci",
+	"login_generating_key": "Mengirim kode",
 	"login_generating_keys_info": "Tombol hanya dihasilkan satu kali. Ini bisa memakan waktu beberapa menit pada perangkat yang lebih lambat, mohon bersabar.",
 	"login_edit_number": "Edit nomor telepon",
 	"login_enter_code_label_md": "Kami telah mengirim kode ke aplikasi ** Bakolpulsa ** di perangkat Anda yang lain. \nSilahkan masukkan kode di bawah ini.",
