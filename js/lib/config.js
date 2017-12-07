@@ -59,32 +59,16 @@ Config.I18n = {
   locale: 'id-id',
   supported: [
     'id-id'
-    , 'en-us'
-    , 'es-es'
-    , 'de-de'
-    , 'it-it'
-    , 'nl-nl'
-    , 'pt-br'
+    , 
   // ,"ru-ru"
   ], // To be copied to package.json
   languages: {
     'id-id': 'Indonesia',
-    'en-us': 'English',
-    'de-de': 'Deutsch',
-    'es-es': 'Español',
-    'it-it': 'Italiano',
-    'ru-ru': 'Русский',
-    'nl-nl': 'Nederlands',
-    'pt-br': 'Português (Brazil)'
+   
   },
   aliases: {
     'id': 'id-id',
-    'en': 'en-us',
-    'de': 'de-de',
-    'es': 'es-es',
-    'it': 'it-it',
-    'ru': 'ru-ru',
-    'nl': 'nl-nl'
+    
   },
   messages: {},
   fallback_messages: {}
