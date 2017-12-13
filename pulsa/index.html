@@ -1,6 +1,34 @@
 <!DOCTYPE html>
 <html>
 <head>
+    
+    <style>
+body {margin:0;}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.main {
+  padding: 16px;
+  margin-top: 30px;
+  height: 1500px; /* Used in this example to enable scrolling */
+}
+</style>
 <style>
 ul {
     list-style-type: none;
@@ -39,7 +67,13 @@ li a:hover:not(.active) {
 </style>
 </head>
 <body>
+<div class="navbar">
+  <a href="#home">Home</a>
+  <a href="#news">News</a>
+  <a href="#contact">Contact</a>
+</div>
 
+<div class="main">
 <h2>Vertical Navigation Bar</h2>
 <p>In this example, we center the navigation links and add a border to the navigation bar.</p>
 <center>
@@ -49,6 +83,6 @@ li a:hover:not(.active) {
   <li><a href="#contact">Contact</a></li>
   <li><a href="#about">About</a></li>
 </ul>
-    </center>
+    </center></div>
 </body>
 </html>
