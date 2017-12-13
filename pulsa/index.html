@@ -1,4 +1,31 @@
 <style>
+body {margin:0;}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.main {
+  padding: 16px;
+  margin-top: 30px;
+  height: 1500px; /* Used in this example to enable scrolling */
+}
+</style>
+<style>
 body {
   background: #136a8a;
   background: -webkit-linear-gradient(to left, #136a8a, #267871);
@@ -101,6 +128,11 @@ select > option
 -moz-border-radius: 5px;
 border-radius: 5px;}
 </style>
+<div class="navbar">
+  <a href="#home">Home</a>
+  <a href="#news">News</a>
+  <a href="#contact">Contact</a>
+</div>
 
 <div class="centerme">
 
