@@ -67,7 +67,7 @@ select{background:#fff!important}
 html{font-size:10px;-webkit-tap-highlight-color:transparent}
 body{line-height:1.42857143;background-color:#fff}
 button,input,select,textarea{font-family:inherit;font-size:inherit;line-height:inherit}
-a{color:#50c25d;text-decoration:none}
+a{color:#333545;text-decoration:none}
 a:focus,a:hover{color:#333545;text-decoration:underline}
 a:focus{outline:dotted thin;outline:-webkit-focus-ring-color auto 5px;outline-offset:-2px}
 figure{margin:0}
