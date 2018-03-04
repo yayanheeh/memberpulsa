@@ -1,13 +1,5 @@
-
-<title>Bakolpulsa.com</title>
-
-
-  
-
-  
- 
-         <div class="tg_page_head">
-  <div class="navbar navbar-static-top navbar-inverse" role="navigation" ng-class="{navbar_peer_not_selected: !curDialog.peer, navbar_offline: offline, navbar_history_select: historyState.selectActions}">
+<div class="tg_page_head">
+  <div class="navbar navbar-static-top  navbar-inverse" role="navigation" ng-class="{navbar_peer_not_selected: !curDialog.peer, navbar_offline: offline, navbar_history_select: historyState.selectActions}">
     <div class="container">
 
 
@@ -20,16 +12,14 @@
           <span class="icon-bar"></span>
         </a>
         <ul ng-switch-when="true" class="dropdown-menu">
-        
-          <li><a ng-click="openGroup()" my-i18n="head_new_group"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></a></li>
-          <li><a onclick="document.getElementById('id01').style.display='block'" class="w3- w3-">Paduan</a></li>
+          <li><a ng-click="openGroup()" my-i18n="head_new_group"></a></li>
           <li><a ng-click="importContact()" my-i18n="head_new_contact"></a></li>
           <li ng-if="!isEmpty.contacts"><a ng-click="openContacts()" my-i18n="head_contacts"></a></li>
           <li><a ng-click="openSettings()" my-i18n="head_settings"></a></li>
           <li><a ng-click="logOut()" my-i18n="head_log_out"></a></li>
         </ul>
         <ul ng-switch-default class="dropdown-menu">
-          <li><a ng-click="toggleEdit()" my-i18n="head_select_messages"></a></li>
+          <li><a ng-click="toggleEdit()" my-i18n="head_edit_messages"></a></li>
           <li ng-if="!historyFilter.mediaType" class="divider"></li>
           <li ng-if="!historyFilter.mediaType"><a ng-click="toggleMedia('photos')" my-i18n="head_media_photos"></a></li>
           <li ng-if="!historyFilter.mediaType"><a ng-click="toggleMedia('video')" my-i18n="head_media_video"></a></li>
@@ -44,7 +34,7 @@
 
       <div class="navbar-header">
 
-         <a class="navbar-brand tg_logo_wrap" href="#/im"><i><img src="https://raw.githubusercontent.com/bpstore/memberpulsa/master/img/bb.jpg"width="120"height="350"/></i></a>
+        <a class="navbar-brand tg_logo_wrap" href="#/im"><i class="icon icon-tg-logo"></i><i class="icon icon-tg-title"></i></a>
 
         <span class="tg_head_logo"></span></a>
 
@@ -70,7 +60,7 @@
               <li class="navbar-quick-left">
                 <a ng-click="selectedFlush()" my-i18n="head_clear_all"></a>
               </li>
-              <li class="navbar-quick-title" my-i18n="head_select"></li>
+              <li class="navbar-quick-title" my-i18n="head_edit"></li>
             </ul>
             <ul ng-switch-default class="nav navbar-nav navbar-quick-nav" ng-switch="historyPeer.id > 0">
               <li ng-switch-when="true">
@@ -88,7 +78,6 @@
                 </a>
               </li>
               <li ng-switch-default>
-                
                 <a href="#/im" class="navbar-quick-group-back">
                   <i class="icon icon-back"></i>
                   <div class="navbar-quick-back-title">
@@ -123,16 +112,5 @@
       </div>
 
     </div>
-  </div>
-</div>
- 
-
-
-    
-       </div>
-       
-      </div>
-    </div>
-
   </div>
 </div>
