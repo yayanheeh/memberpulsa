@@ -46,7 +46,7 @@ html {
   margin-right: 20px;
   display: block;
   line-height: 0;
-  height: auto;
+  height: aut
 }
 .tg_page_head .navbar > .container .navbar-quick-nav .navbar-brand {
   margin-right: 0;
@@ -237,14 +237,14 @@ html {
   font-size: 15px;
   color: #fff;
   margin: 0;
-  white-space: nowrap;
+  white-space: nowrap;u
   text-overflow: ellipsis;
   overflow: hidden;
 }
 .navbar-quick-back-title {
   max-width: 160px;
   overflow: hidden;
-  text-overflow: ellipsis;
+  text-overflow: ellipsis
 }
 .navbar-quick-media-back h4 {
   margin: 9px 0 12px 0;
@@ -261,7 +261,7 @@ html {
   overflow: hidden;
   margin-left: 0;
 }
-.navbar-quick-profile-back .status_online,
+.navbar-quick-profile-back .status_online,u
 .navbar-quick-group-back .status_online {
   color: #fff;
 }
