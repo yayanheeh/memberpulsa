@@ -7,18 +7,11 @@
   max-width: 1010px;
   margin: 0 auto;
   height: 48px;
-  background: #1ebea5;
+  background: #008000;
 }
 .tg_head_logo_wrap {
   float: left;
   width: 31%;
-}
-h1 {
-    text-align: center;
-}
-
-h2 {
-    text-align: left;
 }
 .tg_head_main_wrap {
   float: left;
@@ -37,7 +30,7 @@ h2 {
 .tg_head_btn:hover {
   color: #fff;
   text-decoration: none;
-  background: #48ae53;
+  background: #497799;
 }
 .dropdown.open .tg_head_btn {
   position: relative;
@@ -1902,6 +1895,3 @@ div.media_modal_date {
   height: 18px;
   margin: 23px 27px;
 }
-
-
-
