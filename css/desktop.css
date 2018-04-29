@@ -30,7 +30,7 @@
 .tg_head_btn:hover {
   color: #fff;
   text-decoration: none;
-  background: #497799;
+  background: #008000;
 }
 .dropdown.open .tg_head_btn {
   position: relative;
@@ -715,7 +715,7 @@ a.footer_link.active:active {
 }
 .contacts_modal_members_list .active a.contacts_modal_contact,
 .contacts_modal_members_list .active a.contacts_modal_contact:hover {
-  background: #6490b1;
+  background: #008000;
   color: #fff;
 }
 .contacts_modal_members_list .active a.contacts_modal_contact .md_modal_list_peer_description,
