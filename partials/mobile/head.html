@@ -10,12 +10,8 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
-        </a> 
+        </a>
         <ul ng-switch-when="true" class="dropdown-menu">
-        
-          
-         <li><a href="#/im?p=@SemakinJaya88_bot">Isi pulsa</a></li>
-          <li><a href="">Kode pulsa</a></li>
           <li><a ng-click="openGroup()" my-i18n="head_new_group"></a></li>
           <li><a ng-click="importContact()" my-i18n="head_new_contact"></a></li>
           <li ng-if="!isEmpty.contacts"><a ng-click="openContacts()" my-i18n="head_contacts"></a></li>
@@ -23,7 +19,7 @@
           <li><a ng-click="logOut()" my-i18n="head_log_out"></a></li>
         </ul>
         <ul ng-switch-default class="dropdown-menu">
-          <li><a ng-click="toggleEdit()" my-i18n="head_edit_messages"></a></li>
+          <li><a ng-click="toggleEdit()" my-i18n="head_select_messages"></a></li>
           <li ng-if="!historyFilter.mediaType" class="divider"></li>
           <li ng-if="!historyFilter.mediaType"><a ng-click="toggleMedia('photos')" my-i18n="head_media_photos"></a></li>
           <li ng-if="!historyFilter.mediaType"><a ng-click="toggleMedia('video')" my-i18n="head_media_video"></a></li>
@@ -38,7 +34,7 @@
 
       <div class="navbar-header">
 
-        <a class="navbar-brand tg_logo_wrap" href="#/im"><font color="black">Bakolpulsa</font></a>
+        <a class="navbar-brand tg_logo_wrap" href="#/im"><i class="icon icon-tg-logo"></i><i class="icon icon-tg-title"></i></a>
 
         <span class="tg_head_logo"></span></a>
 
@@ -64,7 +60,7 @@
               <li class="navbar-quick-left">
                 <a ng-click="selectedFlush()" my-i18n="head_clear_all"></a>
               </li>
-              <li class="navbar-quick-title" my-i18n="head_edit"></li>
+              <li class="navbar-quick-title" my-i18n="head_select"></li>
             </ul>
             <ul ng-switch-default class="nav navbar-nav navbar-quick-nav" ng-switch="historyPeer.id > 0">
               <li ng-switch-when="true">
