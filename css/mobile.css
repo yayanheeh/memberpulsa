@@ -4,7 +4,7 @@
    Prepending 'only screen and ' to each media query breaks nested media queries */
 /* app mobile css */
 html {
-  background: #008000;
+  background: #fff;
 }
 .dropdown-menu {
   border-radius: 0;
