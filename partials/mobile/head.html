@@ -1,56 +1,6 @@
-<div class="tg_page_head">
+<div class="tg_page_head"><link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <div class="navbar navbar-static-top  navbar-inverse" role="navigation" ng-class="{navbar_peer_not_selected: !curDialog.peer, navbar_offline: offline, navbar_history_select: historyState.selectActions}">
     <div class="container">
-      <style>
-        .overlay {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgba(0, 0, 0, 0.7);
-  transition: opacity 500ms;
-  visibility: hidden;
-  opacity: 0;
-}
-.overlay:target {
-  visibility: visible;
-  opacity: 1;
-}
-.popup {
-  margin: 70px auto;
-  padding: 20px;
-  background: #fff;
-  border-radius: 5px;
-  width: 30%;
-  position: relative;
-  transition: all 2s ease-in-out;
-}
-.popup .close {
-  position: absolute;
-  top: 20px;
-  right: 30px;
-  transition: all 200ms;
-  font-size: 30px;
-  font-weight: bold;
-  text-decoration: none;
-  color: #333;
-}
-.popup .content {
-  max-height: 30%;
-  overflow: auto;
-}
-      </style>
-      <div id="popup1" class="overlay">
-	<div class="popup">
-		<h2>Code transaksi</h2>
-		<a class="close" href="#">&times;</a>
-		<div class="content">
-			Thank to pop me out of that button, but now i'm done so you can close this window.
-		</div>
-	</div>
-</div>
-
 
       <a class="navbar-peer-wrap" my-peer-photolink="historyPeer.id" peer-watch="true"></a>
 
@@ -62,7 +12,7 @@
         </a>
         <ul ng-switch-when="true" class="dropdown-menu">
           <li><a href="https://www.bakolpulsa.cf/#/im?p=@SemakinJaya88_bot">Isi pulsa</a>
-          <li><a class="button" href="#popup1">Kode transaksi</a></li><hr/>
+          <li><a onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-">Kode transaksi</a></li>
           <li><a ng-click="openGroup()" my-i18n="head_new_group"></a></li>
           <li><a ng-click="importContact()" my-i18n="head_new_contact"></a></li>
           <li ng-if="!isEmpty.contacts"><a ng-click="openContacts()" my-i18n="head_contacts"></a></li>
@@ -151,6 +101,7 @@
             </ul>
           </div>
         </div>
+	 
       </div>
 
       <div class="navbar-menu" ng-if="offline">
@@ -162,6 +113,17 @@
         </ul>
       </div>
 
+    </div>
+  </div>
+</div>
+
+<div id="id01" class="w3-modal">
+    <div class="w3-modal-content">
+      <div class="w3-container">
+        <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+        <p>Some text. Some text. Some text.</p>
+        <p>Some text. Some text. Some text.</p>
+      </div>
     </div>
   </div>
 </div>
